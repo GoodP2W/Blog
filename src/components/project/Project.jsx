@@ -6,16 +6,28 @@ function Project() {
       <div className="container">
         <div className="projects__wrapper">
           <h2>Projects</h2>
-          <ul className="projects__project">
-            <li className="project_item">
+          <ul className="projects__list">
+            <li className="project__item">
               <a href="#"></a>
               <h3>Lorem</h3>
             </li>
-            <li className="project_item">
+            <li className="project__item">
               <a href="#"></a>
               <h3>Lorem</h3>
             </li>
-            <li className="project_item">
+            <li className="project__item">
+              <a href="#"></a>
+              <h3>Lorem</h3>
+            </li>
+            <li className="project__item">
+              <a href="#"></a>
+              <h3>Lorem</h3>
+            </li>
+            <li className="project__item">
+              <a href="#"></a>
+              <h3>Lorem</h3>
+            </li>
+            <li className="project__item">
               <a href="#"></a>
               <h3>Lorem</h3>
             </li>
