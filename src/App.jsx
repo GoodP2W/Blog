@@ -4,7 +4,8 @@ import "./styles/index.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Home } from "./pages/Home";
-import { Project } from "./pages/Projects";
+import { Projects } from "./pages/Projects";
+import { Contacts } from "./pages/Contacts";
 
 /*Components*/
 import { Header } from "./components/header/Header";
@@ -17,8 +18,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="project" element={<Project />} />
-          {/* <Route path="/contacts" element={<Contscts />} /> */}
+          <Route path="/projects" element={<Projects />} />
+          <Route path="contacts" element={<Contacts />} />
         </Routes>
         <Footer />
       </Router>

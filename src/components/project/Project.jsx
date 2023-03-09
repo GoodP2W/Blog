@@ -1,6 +1,8 @@
-function Projects() {
+import "./project.scss";
+
+function Project() {
   return (
-    <div className="projects">
+    <div className="project">
       <div className="container">
         <div className="projects__wrapper">
           <h2>Projects</h2>
@@ -24,4 +26,4 @@ function Projects() {
   );
 }
 
-export { Projects };
+export { Project };

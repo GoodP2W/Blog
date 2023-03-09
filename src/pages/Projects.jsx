@@ -1,13 +1,11 @@
-// import { Header } from "../components/header/Header";
-// import { Footer } from "../components/footer/Footer";
-import { Projects } from "../components/project/projects";
+import { Project } from "../components/project/Project";
 
-const Project = () => {
+const Projects = () => {
   return (
     <>
-      <Projects />
+      <Project />
     </>
   );
 };
 
-export { Project };
+export { Projects };
