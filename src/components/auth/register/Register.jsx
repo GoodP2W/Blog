@@ -1,9 +1,11 @@
-function Register() {
+function Registration() {
   return (
-    <div className="register">
+    <div className="registration">
       <div className="container">
-        <div className="register__wrapper"></div>
+        <div className="registration__wrapper"></div>
       </div>
     </div>
   );
 }
+
+export { Registration };
