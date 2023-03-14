@@ -15,17 +15,20 @@ function Footer() {
           </div>
           <ul className="social">
             <li className="social_item">
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/serhii-piddubnyi-452350253/"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li className="social_item">
-              <a href="#">
+              <a target="_blank" href="#">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li className="social_item">
-              <a href="#">
+              <a target="_blank" href="#">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>

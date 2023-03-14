@@ -12,6 +12,8 @@ import { Auth } from "./pages/Auth";
 /*Components*/
 import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
+import { Registration } from "./components/auth/register/Register";
+import { Profile } from "./components/profiles/Profiles";
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="contacts" element={<Contacts />} />
-          <Route path="auth" element={<Auth />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
         <Footer />
       </Router>

@@ -7,18 +7,18 @@ function Header() {
         <div className="header__wrapper">
           <div className="header__navBar">
             <span>
-              <a href="#">P2W</a>
+              <a href="/">P2W</a>
             </span>
             <div>
               <ul>
                 <li>
-                  <a href="#">home</a>
+                  <a href="/">home</a>
                 </li>
                 <li>
                   <a href="#">proect</a>
                 </li>
                 <li>
-                  <a href="#">login</a>
+                  <a href="/auth">login</a>
                 </li>
               </ul>
             </div>
