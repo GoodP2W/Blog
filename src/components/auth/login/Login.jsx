@@ -1,15 +1,10 @@
-/*import scss style */
 import "./login.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-/* font awesome */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
-
 import { faEarlybirds } from "@fortawesome/free-brands-svg-icons";
-
 import supabase from "../../../sevices/supabase";
 
 function Login() {
@@ -28,7 +23,7 @@ function Login() {
     event.preventDefault();
 
     try {
-      const { user, error } = await supabase.auth.signIn({
+      const { user, error } = await supabase.auth.signInWithPassword({
         email: formData.email,
         password: formData.password,
       });

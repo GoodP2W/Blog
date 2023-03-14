@@ -15,21 +15,6 @@
       font-weight: bold;
       margin: 0;
     }
-    
-    .logout__button {
-      font-size: 16px;
-      font-weight: bold;
-      background-color: #f44336;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      
-      &:hover {
-        background-color: #d32f2f;
-      }
-    }
   }
   
   .post__form {
@@ -54,7 +39,21 @@
     
     .form__group__submit {
       text-align: right;
+
+      .logout__button {
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
       
+      &:hover {
+        background-color: #d32f2f;
+      }
+    }
       button {
         font-size: 16px;
         font-weight: bold;

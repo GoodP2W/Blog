@@ -15,7 +15,7 @@ function Header() {
                   <a href="/">home</a>
                 </li>
                 <li>
-                  <a href="#">proect</a>
+                  <a href="post">posts</a>
                 </li>
                 <li>
                   <a href="/auth">login</a>

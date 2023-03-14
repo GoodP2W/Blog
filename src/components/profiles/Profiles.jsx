@@ -25,7 +25,7 @@ function Profile() {
       const post = {
         id: new Date().getTime(),
         content: newPost,
-        user_id: 1, // replace with actual user ID
+        user_id: 1,
       };
       setPosts([...posts, post]);
       setNewPost("");
@@ -40,9 +40,6 @@ function Profile() {
     <div className="profile__container">
       <div className="profile__header">
         <h2>My Profile</h2>
-        <button className="logout__button" onClick={handleLogout}>
-          Logout
-        </button>
       </div>
       <div className="post__form">
         <form onSubmit={handleSubmit}>
@@ -57,6 +54,9 @@ function Profile() {
           </div>
           <div className="form__group__submit">
             <button type="submit">Submit</button>
+            <button className="logout__button" onClick={handleLogout}>
+              Logout
+            </button>
           </div>
         </form>
       </div>

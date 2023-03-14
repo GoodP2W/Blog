@@ -14,6 +14,7 @@ import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
 import { Registration } from "./components/auth/register/Register";
 import { Profile } from "./components/profiles/Profiles";
+import { Post } from "./components/posts/Post";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/auth" element={<Auth />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/post" element={<Post />} />
         </Routes>
         <Footer />
       </Router>
