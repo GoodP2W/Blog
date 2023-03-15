@@ -31,9 +31,7 @@ function Login() {
       if (error) {
         throw error;
       }
-
       console.log("user:", user);
-
       navigate("/profile");
     } catch (error) {
       console.error("Error signing in:", error.message);

@@ -1,6 +1,7 @@
-import "./styles/App.scss";
-import "./styles/index.scss";
+/*styles */
+import "./styles/global.scss";
 
+/*react router */
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 /*Pages */

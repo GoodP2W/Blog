@@ -1,8 +1,4 @@
 
-
-
-
-
 .contacts{
   .contacts__wrapper{
     min-height: 100vh;
@@ -13,6 +9,12 @@
     .contacts__icon{
       margin-top: 20%;
       font-size: 150px;
+    }
+    .mail_icon{
+      margin: 0 5px;
+    }
+    .mail_icon:hover{
+      text-decoration: underline;
     }
   }
 }

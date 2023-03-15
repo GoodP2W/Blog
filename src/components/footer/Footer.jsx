@@ -11,7 +11,7 @@ function Footer() {
       <div className="container">
         <div className="footer__wrapper">
           <div className="contacts">
-            <a href="#">contacts</a>
+            <a href="/contacts">contacts</a>
           </div>
           <ul className="social">
             <li className="social_item">
@@ -23,12 +23,12 @@ function Footer() {
               </a>
             </li>
             <li className="social_item">
-              <a target="_blank" href="#">
+              <a target="_blank" href="https://github.com/GoodP2W">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li className="social_item">
-              <a target="_blank" href="#">
+              <a target="_blank" href="https://www.instagram.com/seekssouls/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>

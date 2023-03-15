@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./profile.scss";
 
+import { PostForm } from "./PostForm";
+import { PostList } from "./PostList";
+
 /*supabase */
 import supabase from "../../sevices/supabase";
 
 function Profile() {
   const navigate = useNavigate();
-  const [newPost, setNewPost] = useState("");
   const [posts, setPosts] = useState([]);
 
   const handleLogout = async () => {
@@ -19,21 +21,8 @@ function Profile() {
     }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (newPost.trim() !== "") {
-      const post = {
-        id: new Date().getTime(),
-        content: newPost,
-        user_id: 1,
-      };
-      setPosts([...posts, post]);
-      setNewPost("");
-    }
-  };
-
-  const handleInputChange = (event) => {
-    setNewPost(event.target.value);
+  const handleSubmit = (post) => {
+    setPosts([...posts, post]);
   };
 
   return (
@@ -41,32 +30,12 @@ function Profile() {
       <div className="profile__header">
         <h2>My Profile</h2>
       </div>
-      <div className="post__form">
-        <form onSubmit={handleSubmit}>
-          <div className="form__group">
-            <label htmlFor="post">Write something...</label>
-            <textarea
-              id="post"
-              className="form__control"
-              value={newPost}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="form__group__submit">
-            <button type="submit">Submit</button>
-            <button className="logout__button" onClick={handleLogout}>
-              Logout
-            </button>
-          </div>
-        </form>
-      </div>
-      <div className="post__list">
-        <h3>My Posts</h3>
-        {posts.map((post) => (
-          <div key={post.id} className="post__item">
-            <h3>{post.content}</h3>
-          </div>
-        ))}
+      <PostForm onSubmit={handleSubmit} />
+      <PostList posts={posts} />
+      <div className="form__group__submit">
+        <button className="logout__button" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );
