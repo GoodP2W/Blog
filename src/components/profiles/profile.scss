@@ -1,206 +1,18 @@
-// .profile__container {
-//   font-family: Arial, sans-serif;
-//   max-width: 800px;
-//   margin: 0 auto;
-//   padding: 20px;
-  
-//   .profile__header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-bottom: 20px;
-    
-//     h2 {
-//       font-size: 24px;
-//       font-weight: bold;
-//       margin: 0;
-//     }
-//   }
-  
-//   .post__form {
-//     margin-bottom: 20px;
-    
-//     label {
-//       font-size: 16px;
-//       font-weight: bold;
-//       display: block;
-//       margin-bottom: 10px;
-//     }
-    
-//     textarea {
-//       font-size: 16px;
-//       padding: 10px;
-//       border: 1px solid #ccc;
-//       border-radius: 5px;
-//       width: 100%;
-//       min-height: 100px;
-//       resize: vertical;
-//     }
-    
-//     .form__group__submit {
-//       text-align: right;
 
-//       .logout__button {
-//       font-size: 16px;
-//       font-weight: bold;
-//       background-color: red;
-//       color: #fff;
-//       border: none;
-//       padding: 10px 20px;
-//       border-radius: 5px;
-//       cursor: pointer;
-      
-//       &:hover {
-//         background-color: #d32f2f;
-//       }
-//     }
-//       button {
-//         font-size: 16px;
-//         font-weight: bold;
-//         background-color: blue;
-//         color: #fff;
-//         border: none;
-//         padding: 10px 20px;
-//         border-radius: 5px;
-//         cursor: pointer;
-        
-//         &:hover {
-//           background-color: blue;
-//         }
-//       }
-//     }
-//   }
-  
-//   .post__list {
-//     h3 {
-//       font-size: 20px;
-//       font-weight: bold;
-//       margin: 0;
-//       margin-bottom: 10px;
-//     }
-    
-//     .post__item {
-//       margin-bottom: 20px;
-      
-//       h3 {
-//         font-size: 18px;
-//         margin: 0;
-//         margin-bottom: 10px;
-//       }
-      
-//       p {
-//         font-size: 14px;
-//         margin: 0;
-//         color: #666;
-//       }
-//     }
-//   }
-// }
+  /*post form*/
 
-// .profile__container {
-//   font-family: Arial, sans-serif;
-//   max-width: 800px;
-//   margin: 0 auto;
-//   padding: 20px;
-// }
-// .profile__header {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   margin-bottom: 20px;
 
-//   h2 {
-//     font-size: 24px;
-//     font-weight: bold;
-//     margin: 0;
-//   }
-// }
-
-// .post__form {
-//   margin-bottom: 20px;
-
-//   label {
-//     font-size: 16px;
-//     font-weight: bold;
-//     display: block;
-//     margin-bottom: 10px;
-//   }
-
-//   textarea {
-//     font-size: 16px;
-//     padding: 10px;
-//     border: 1px solid #ccc;
-//     border-radius: 5px;
-//     width: 100%;
-//     min-height: 100px;
-//     resize: vertical;
-//   }
-
-//   .form__group__submit {
-//     text-align: right;
-
-//     .logout__button {
-//       font-size: 16px;
-//       font-weight: bold;
-//       background-color: red;
-//       color: #fff;
-//       border: none;
-//       padding: 10px 20px;
-//       border-radius: 5px;
-//       cursor: pointer;
-
-//       &:hover {
-//         background-color: #d32f2f;
-//       }
-//     }
-
-//     button {
-//       font-size: 16px;
-//       font-weight: bold;
-//       background-color: blue;
-//       color: #fff;
-//       border: none;
-//       padding: 10px 20px;
-//       border-radius: 5px;
-//       cursor: pointer;
-
-//       &:hover {
-//         background-color: blue;
-//       }
-//     }
-//   }
-// }
-
-.profile__container {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  .profile__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .form__group {
   margin-bottom: 20px;
-
-  h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-}
-}
-
-.post__form {
-  margin-bottom: 20px;
-
+  
   label {
     font-size: 16px;
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
   }
-
-  textarea {
+  
+  .form__control {
     font-size: 16px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -209,26 +21,97 @@
     min-height: 100px;
     resize: vertical;
   }
+}
 
-  .form__group__submit {
-    text-align: right;
+.form__group__submit {
+  text-align: right;
 
-    .logout__button {
-      font-size: 16px;
-      font-weight: bold;
-      background-color: red;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
+  .logout__button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: rgba(255, 0, 0, 0.568);
+    }
+  }
 
-      &:hover {
-        background-color: #d32f2f;
-      }
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
+
+/*post list*/
+.post__list {
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .post__item {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 10px;
     }
 
-    button {
+    p {
+      font-size: 14px;
+      margin: 0;
+      color: #666;
+    }
+  }
+}
+
+
+/*profile*/
+
+.profile__container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .profile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .form__group__submit {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    button[type="submit"] {
       font-size: 16px;
       font-weight: bold;
       background-color: blue;
@@ -243,6 +126,7 @@
       }
     }
   }
-}
+
+
 
 
