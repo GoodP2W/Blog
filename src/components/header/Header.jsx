@@ -15,9 +15,6 @@ function Header() {
                   <a href="/">home</a>
                 </li>
                 <li>
-                  <a href="post">posts</a>
-                </li>
-                <li>
                   <a href="/auth">login</a>
                 </li>
               </ul>
